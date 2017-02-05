@@ -1,0 +1,87 @@
+
+/*Change the box model*/
+html *{
+    box-sizing: content-box;
+}
+*:before, *:after{
+    box-sizing: content-box
+}
+
+body{
+    font-size: 24px;
+    background-color: ;
+}
+h1{
+    font-size: .6em;
+}
+h1{
+   text-align: center;
+    font-size: .87em;
+     background-color: orange;
+    padding: 10px;
+    border: 1px solid #000000;
+    margin: auto;
+    min-width: 350px;
+}
+h2{
+    text-align-last: center;
+    font-size: .9em;
+    margin: auto;
+}
+h3{
+    text-align: center;
+    font-size: .87em;
+     background-color: orange;
+    padding: 10px;
+    border: 1px solid #000000;
+    margin: auto;
+    min-width: 350px;
+}
+
+h4{
+    margin: auto;
+    text-align: center;
+    font-size: .6em;
+    background-color: orange;
+    padding: 10px;
+    border: 1px solid #000000;
+    min-width: 350px;
+}
+ul{
+    font-size: 19px;
+    list-style-position: inside;
+    align-content: center;
+    text-align: center;
+    
+}
+#page-nav{
+    font-size: 19px;
+    list-style-position: inside;
+    align-content: center;
+    text-align: center;
+}
+li{
+
+}
+#desktop, #tablet,#mobile,{
+    display: flex;
+    margin: auto;
+}
+#wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#desktop, #tablet{
+    display: none;
+}
+@media only screen and (min-width: 500px){
+    #tablet{display: flex; width: 30em;}
+    #mobile{display: none;}
+}
+
+@media only screen and (min-width: 1024px){
+    #mobile{display: none;}
+    #tablet{display: none;}
+    #desktop{display: flex; width: 40em;}
+}
