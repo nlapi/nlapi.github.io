@@ -35,6 +35,6 @@ body{
 #hi-lo #conditions{
   width: 50%; /* Browser rounding errors force this down */
   position:absolute;
-  top:150px;
-  left:21%;
+  top:103px;
+  left:51%;
 }
