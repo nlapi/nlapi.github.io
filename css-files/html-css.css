@@ -43,3 +43,11 @@ body {
     width: 90%;
     /* Browser rounding errors force this down */
 }
+
+#page-search {
+    text-align: right;
+    
+#page-look {
+    text-align: left;
+    }    
+}
