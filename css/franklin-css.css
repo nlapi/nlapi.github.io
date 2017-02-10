@@ -291,6 +291,12 @@ th {
 .categories .section-description { 
   margin-bottom: 4rem;
 }
+/* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      .section-hourly{
+          display: none;
+      }
+    }
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
