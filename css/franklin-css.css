@@ -21,7 +21,6 @@ section,
 summary {
   display: block;
 }
-
 audio,
 canvas,
 progress,
@@ -29,17 +28,15 @@ video {
   display: inline-block; /* 1 */
   vertical-align: baseline; /* 2 */
 }
-
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
 [hidden],
-template {
+NIL {
   display: none;
 }
-
 a {
   background-color: transparent;
 }
@@ -48,8 +45,6 @@ a:active,
 a:hover {
   outline: 0;
 }
-
-
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -58,12 +53,9 @@ b,
 strong {
   font-weight: bold;
 }
-
-
 dfn {
   font-style: italic;
 }
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -145,7 +137,6 @@ select {
 
 button,
 html input[type="button"], /* 1 */
-input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
@@ -161,34 +152,15 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-
 input {
   line-height: normal;
 }
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box; /* 2 */
   box-sizing: content-box;
 }
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -218,14 +190,10 @@ th {
   padding: 0;
 }
 
-/* Shared
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
   border-radius: 100px;
 }
 
-/* Sections
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
   padding: 8rem 0 7rem;
   text-align: center;
@@ -241,8 +209,6 @@ th {
   margin-bottom: 0.2rem;
 }
 
-/* Hero
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .phones {
   position: relative;
 }
@@ -255,10 +221,8 @@ th {
   display: none;
 }
 
-/* Values
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background-image: url('../images/values-bg.jpg');
+  background-image: url('#');
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
@@ -275,14 +239,10 @@ th {
   font-weight: 300;
 }
 
-/* Help
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .get-help {
   border-bottom: 1px solid #ddd;
 }
 
-/* Categories
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .categories {
   background-image: url('../images/values-bg.jpg');
   background-size: cover;
@@ -291,14 +251,13 @@ th {
 .categories .section-description { 
   margin-bottom: 4rem;
 }
-/* Smartphones (portrait and landscape) ----------- */
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
       .section-hourly{
           display: none;
       }
     }
 
-/* Bigger than 550 */
+/* +550 */
 @media (min-width: 550px) {
   .section {
     padding: 5rem 0 11rem;
@@ -328,7 +287,7 @@ th {
   }
 }
 
-/* Bigger than 750 */
+/* +750 */
 @media (min-width: 750px) {
   .hero {
     height: 190px;
@@ -361,7 +320,7 @@ th {
   }
 }
 
-/* Bigger than 1000 */
+/* +1000 */
 @media (min-width: 1000px) {
   .section {
     padding: 15rem 0 19rem;
@@ -382,8 +341,6 @@ th {
   }
 }
 
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
   width: 70%;
@@ -398,14 +355,14 @@ th {
   float: left;
   box-sizing: border-box; }
 
-/* For devices larger than 400px */
+/* +400px */
 @media (min-width: 400px) {
   .container {
     width: 85%;
     padding: 0; }
 }
 
-/* For devices larger than 550px */
+/* +550px */
 @media (min-width: 550px) {
   .container {
     width: 80%; }
@@ -433,9 +390,8 @@ th {
   .one-third.column               { width: 30.6666666667%; }
   .two-thirds.column              { width: 65.3333333333%; }
 
-  .one-half.column                { width: 48%; }
+  .one-half.column                { width: 48%; } 
 
-  /* Offsets */
   .offset-by-one.column,
   .offset-by-one.columns          { margin-left: 8.66666666667%; }
   .offset-by-two.column,
@@ -469,24 +425,15 @@ th {
 
 }
 
-
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.5em;  
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
-
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -498,7 +445,7 @@ h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
-/* Larger than phablet */
+/* Me e madhe se tableta */
 @media (min-width: 550px) {
   h1 { font-size: 5.0rem; }
   h2 { font-size: 4.2rem; }
@@ -511,21 +458,13 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin-top: 0; }
 
-
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: #1EAEDB; }
 a:hover {
   color: #0FA0CE; }
 
-
-/* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
 button,
-input[type="submit"],
-input[type="reset"],
 input[type="button"] {
   display: inline-block;
   height: 38px;
@@ -546,40 +485,26 @@ input[type="button"] {
   box-sizing: border-box; }
 .button:hover,
 button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
 input[type="button"]:hover,
 .button:focus,
 button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
   border-color: #888;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
   background-color:  #4454c6
-
-
 ;
   border-color: #4454c6
-
-
 ; }
 .button.button-primary:hover,
 button.button-primary:hover,
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
 input[type="button"].button-primary:hover,
 .button.button-primary:focus,
 button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #000000;
   background-color: #CCCED9
@@ -587,12 +512,6 @@ input[type="button"].button-primary:focus {
   border-color: #000000
 ; }
 
-
-
-
-
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
   list-style: circle inside; }
 ol {
@@ -609,9 +528,6 @@ ol ul {
 li {
   margin-bottom: 1rem; }
 
-
-/* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -625,9 +541,6 @@ pre > code {
   padding: 1rem 1.5rem;
   white-space: pre; }
 
-
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
   padding: 12px 15px;
@@ -640,9 +553,6 @@ th:last-child,
 td:last-child {
   padding-right: 0; }
 
-
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
   margin-bottom: 1rem; }
@@ -662,9 +572,6 @@ ol,
 form {
   margin-bottom: 2.5rem; }
 
-
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
@@ -676,38 +583,15 @@ form {
 .u-pull-left {
   float: left; }
 
-
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
-
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* Self Clearing Goodness */
 .container:after,
 .row:after,
 .u-cf {
   content: "";
   display: table;
   clear: both; }
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
