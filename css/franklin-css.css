@@ -224,7 +224,7 @@ th {
   height: 300px;
   display: -webkit-flex;
   display:         flex;
-  height: 50px;
+  height: 80px;
   line-height:30px;
   -webkit-align-items: center;
           align-items: center;
