@@ -590,7 +590,7 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
-.mobile-images {
+.atributet-flex {
   height: 300px;
   display: -webkit-flex;
   display:         flex;
