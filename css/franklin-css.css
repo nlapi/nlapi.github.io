@@ -595,7 +595,7 @@ hr {
   display: -webkit-flex;
   display:         flex;
   height: 50px;
-  line-height:30px;
+  line-height:10px;
   -webkit-align-items: center;
           align-items: center;
   -webkit-justify-content: center;
