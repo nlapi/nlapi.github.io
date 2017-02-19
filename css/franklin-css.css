@@ -256,6 +256,17 @@ th {
       }
     }
 
+	@media only screen and (min-width: 500px){
+    #tablet{display: flex; width: 30em;}
+    #mobile{display: none;}
+}
+
+@media only screen and (min-width: 1024px){
+    #mobile{display: none;}
+    #tablet{display: none;}
+    #desktop{display: flex; width: 40em;}
+}
+	
 /* +550 */
 @media (min-width: 550px) {
   .section {
