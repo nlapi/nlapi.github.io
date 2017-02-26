@@ -252,18 +252,18 @@ th {
 }
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
       .section-hourly{
-          display: none;
+          display: true;
       }
     }
 
 	@media only screen and (min-width: 500px){
     #tablet{display: flex; width: 30em;}
-    #mobile{display: none;}
+    #mobile{display: true;}
 }
 
 @media only screen and (min-width: 1024px){
-    #mobile{display: none;}
-    #tablet{display: none;}
+    #mobile{display: true;}
+    #tablet{display: true;}
     #desktop{display: flex; width: 40em;}
 }
 	
