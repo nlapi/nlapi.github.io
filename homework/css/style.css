@@ -50,7 +50,7 @@ h1 {
 /*	Background Images - use with Small screens */
 
 .page-header {
-    background-image: url(../raw-images/nps-logo-150.png), url(../raw-images/grand-canyon_small.jpg);
+    background-image: url(../raw-images/nps-logo-50.png), url(../raw-images/grand-canyon_small.jpg);
     
     background-position: right top, center top;
     background-repeat: no-repeat, no-repeat;
@@ -177,7 +177,7 @@ h1 {
 	}
 	/*	Background Images - Use with medium screens */
 	.page-header {
-        background-image: url(../raw-images/nps-logo-150.png), url(../raw-images/grand-canyon_medium.jpg);
+        background-image: url(../raw-images/nps-logo-100.png), url(../raw-images/grand-canyon_medium.jpg);
     
     background-position: right top, center top;
     background-repeat: no-repeat, no-repeat;
