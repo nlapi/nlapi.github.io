@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <title>Fruit Basket</title>
     <link rel="stylesheet" href="css/fruitBasket.css">
-    <script>
+<!--	Nisjet Lapi -->
 </head>
-<!--	Nisjet Lapi   -->
 <body>
 <div class="container">
     <ul class="fruits">
@@ -14,7 +13,9 @@
 
     </ul>
 </div>
-            $(function(){
+  
+    <script>
+        $(function(){
             // Array containing Objects with Fruit names & quantities
             var fruitBasket = [	{title:'Apples', quantity:20},
                                {title:'Oranges', quantity:25},
@@ -24,12 +25,12 @@
                                {title:'Mangoes', quantity:5},
                                {title:'Tomatoes', quantity:30} ];
 
-            // Your jQuery code goes here
-                <script
+            // Your jQuery code goes here 
+              <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
-                
+            
             $.each( fruitBasket, function( index, element){
                 $('.fruits').append('<li>We have ' + element.quantity + " " + element.title + '</li>');
             })
