@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToggleButton</title>
+    <link rel="stylesheet" href="css/toggleBtn.css">
+ <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+
+</head>
+<!--	Nisjet Lapi   -->
+<body>
+    <div class="container">
+        <a href="#" class="toggleBtn">Navigation</a>
+        <a href="#" class="toggleBtn">Fuel Monitor</a>
+        <a href="#" class="toggleBtn">Battery Monitor</a>
+    </div>
+
+   
+
+    <script>
+        $(function () {
+            // jQuery Code goes here
+            $('.toggleBtn').click( function(){
+                $(this).toggleClass('toggleOn');
+
+                                  })
+
+        })
+    </script>
+</body>
+
+</html>
