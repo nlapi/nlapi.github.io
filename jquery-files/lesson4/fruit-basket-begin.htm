@@ -13,10 +13,13 @@
 
     </ul>
 </div>
-  
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
     <script>
         $(function(){
-            // Array containing Objects with Fruit names & quantities
+            // Rregullo objektet ne arrey me emrin e frutave dhe sasine
             var fruitBasket = [	{title:'Apples', quantity:20},
                                {title:'Oranges', quantity:25},
                                {title:'Kiwis', quantity:50},
@@ -25,12 +28,7 @@
                                {title:'Mangoes', quantity:5},
                                {title:'Tomatoes', quantity:30} ];
 
-            // Your jQuery code goes here 
-              <script
-            src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous"></script>
-            
+            // Kodi jquery nuk shkon ketu
             $.each( fruitBasket, function( index, element){
                 $('.fruits').append('<li>We have ' + element.quantity + " " + element.title + '</li>');
             })
