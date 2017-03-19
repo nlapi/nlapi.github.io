@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<script src="js/weather-api.js"></script>
+<script src="js/addon.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    
+<!-- Nisjet Lapi-->
+
+  <!-- Gjerat bazike per faqen
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <head>
+  <title> Current Location Weather Site</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="description" content="Nisjet Lapi's responsive weather site">
+  <meta name="author" content="Nisjet Lapi">
+
+  <!-- Metat per specifikimet per mobajl
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/franklin-css.css">
+ 
+  <!-- Ikona Favorite
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="#">
+
+</head>
+<body>
+
+  <!-- Dizajni principal
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<main> 
+	<p class="atributet-flex" >
+<h3 id="cityDisplay" class="section-heading" >  </h3>
+<h5 id="add2" class="section-heading" >Location & Wind </h5>
+<div class="section hero">
+<div class="container">
+    <div class="row">
+        <div class="one-half column">
+          <h4 id="currentTemp" class="hero-heading">
+            </h4> 
+          <a class="button button-primary">Partly Cloudy</a>
+		  <div id="wrapper">
+    <header id="page-header"></header>
+    <nav id="page-nav"></nav>
+    <main id="page-main">
+      <section class="weather-container">
+        <div id="cover">
+          <div id="status">Loading...</div>
+        </div>
+        <h1 id="cityDisplay"></h1>
+        <h2>Current Conditions</h2>
+        <ul id="current_conditions"> 
+                    <li id="summary"></li>
+                    <li id="add3"></li>
+        </ul>
+      </section>
+    </main>
+    <footer id="page-footer">
+      <div id="footer-content"></div>
+      <small>Last updated: 18 March 2017</small>
+    </footer>
+    <script src="./scripts/jquery-3.0.0.min.js"></script>
+    <script src="./scripts/modules.js"></script>
+    <script src="./scripts/remote_wu.js"></script>
+  </div>
+        </div>
+        <div class="one-half column phones">
+          <img class="phone" alt=" Cloudy with sunshine" src="images/partly-cloudy-with-sunshine-md.png">
+        </div>
+    </div>
+  </div>
+  </div> </main>
+<div class="section get-help">
+  <div class="container">
+    <h3 id="add1" class="section-heading">Humidity</h3>
+    <p class="section-description">Cities near you: <br> <a href="https://nlapi.github.io/greenville-weather.html">Greenville </a> |<a href="#https://nlapi.github.io/greenville-weather.html"> Springfield </a> | <a href="https://nlapi.github.io/franklin.html">Franklin </a></p>
+    <h5 class="section-heading" >Menu | Logo <input id="page-search" type="search" placeholder="Search" name="q"></h5>
+	
+    <p class="section-hourly"  > <strong> Hourly Weather </strong><br> 
+	01.00AM - 67&deg;<sup>F</sup> | 02.00AM - 69 &deg;<sup>F</sup> |  03.00AM - 69&deg;<sup>F</sup> | 04.00AM - 69 &deg;<sup>F</sup><br>  
+	05.00AM - 70&deg;<sup>F</sup> | 06.00AM - 69 &deg;<sup>F</sup> |  07.00AM - 72&deg;<sup>F</sup> | 08.00AM - 74 &deg;<sup>F</sup><br>  
+	09.00AM - 77&deg;<sup>F</sup> | 10.00AM - 79 &deg;<sup>F</sup> |  11.00AM - 81&deg;<sup>F</sup> | 12.00PM - 83 &deg;<sup>F</sup><br>  
+	01.00PM - 86&deg;<sup>F</sup> | 02.00PM - 88 &deg;<sup>F</sup> |  03.00PM - 90&deg;<sup>F</sup> | 04.00PM - 90 &deg;<sup>F</sup><br> 
+	05.00PM - 85&deg;<sup>F</sup> | 06.00PM - 83 &deg;<sup>F</sup> |  07.00PM - 79&deg;<sup>F</sup> | 08.00PM - 74 &deg;<sup>F</sup><br>  
+	09.00PM - 70&deg;<sup>F</sup> | 10.00PM - 68 &deg;<sup>F</sup> |  11.00PM - 66&deg;<sup>F</sup> | 12.00AM - 65 &deg;<sup>F</sup><br> 
+	<br> </p> 
+	<p class="section-hourly"  >
+	 <strong> Mobile Screen Design </strong> <br>
+	<img width="250" height="250" alt="Mobile Screen Design" src="images/mobile-screen-design.jpg">
+	<br>
+	
+	<strong> Medium Screen Design </strong><br>
+	<img width="250" height="250" alt="Medium Screen Design" src="images/medium-screen-design.jpg">
+	<br>
+	
+	<strong> Large Screen Design  </strong><br>
+	<img width="250" height="250" alt="Large Screen Design" src="images/large-screen-design.jpg">
+	<br>
+	</p>
+     
+      <a class="button button-primary" href="http://nlapi.github.io">Homepage</a>
+  </div>
+</div>
+	<footer>
+            <small>Last Updated: March 18, 2017</small>
+        </footer>
+
+<!-- Mbarimi i dokumentit –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Nisjet Lapi -->
+
+			  
+</body>
+</html>
