@@ -35,15 +35,15 @@ function getData(input) {
     url: "https://api.wunderground.com/api/5535e46c982d7f36/geolookup/conditions/q/"
     + input + ".json"
     , dataType: "jsonp"
-    , success : function(parsed_json) {
-  console.log(parsed_json);
-  var city = parsed_json['location']['city'];
-  var state = parsed_json['location']['state'];
-  var temp_f = Math.round(parseInt(parsed_json['current_observation']['temp_f']));
-  var summary = parsed_json['current_observation']['weather'];
-  var humidity = parsed_json['current_observation']['relative_humidity'];
-  var wind = parsed_json['current_observation']['wind_mph'];
-  var feels = parsed_json['current_observation']['feelslike_f'];
+    , success : function(data) {
+  console.log(data);
+  var city = data['location']['city'];
+  var state = data['location']['state'];
+  var temp_f = Math.round(parseInt(data['current_observation']['temp_f']));
+  var summary = data['current_observation']['weather'];
+  var humidity = data['current_observation']['relative_humidity'];
+  var wind = data['current_observation']['wind_mph'];
+  var feels = data['current_observation']['feelslike_f'];
   
   
   $("#cityDisplay").text(city + ", " + state);
