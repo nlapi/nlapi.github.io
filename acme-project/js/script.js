@@ -3,7 +3,7 @@ $(function () {
     $.getJSON("./js/acme.json", function (data) {
         console.log(data);
 
-        var output = '<li><a href="https://nlapi.github.io">Home</a></li>';
+        var output = '<li><a href="https://nlapi.github.io/acme-project">Home</a></li>';
         var counter = 0;
 
         $.each(data.Navigation, function() {
