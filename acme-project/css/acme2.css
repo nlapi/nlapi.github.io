@@ -35,7 +35,7 @@ nav {
 }
 #other-content {
  }
- #other-content-2 {
+#other-content-2 {
  }
 
 #recipes {
@@ -61,6 +61,22 @@ flex-grow: 1;
 #zhvillim-produkti {
     display: flex;
     flex-direction: column;
+}
+
+#list1 {
+		 margin-left:-40px; margin-top:10px;
+}
+
+#list2 {
+	margin:10px;
+}
+
+#list3 {
+	margin:10px;
+}
+
+#list4 {
+	margin:10px;
 }
 
 #emri-produktit {
