@@ -53,6 +53,7 @@ function getData(item){
             $("#pershkrimi-produktit").html(output);
 
             $("#pershkrimi-produktit h2").css("color", "#de2226");
+            $("title").text("ACME - " + data[item].name);
         }
     });
 }
